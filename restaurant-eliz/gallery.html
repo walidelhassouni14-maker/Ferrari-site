@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gallery — Restaurant ELiZ. Beautiful photos of our food, interior, and team in Berlin." />
+  <title>Gallery — Restaurant ELiZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;1,400;1,700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar transparent" id="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="nav-logo"><div class="logo-icon">☽</div><span class="logo-text">Restaurant <strong>ELiZ</strong></span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="events.html">Events</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="order.html">Order Online</a></li><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li>
+      <li><a href="reservations.html" class="btn btn-primary nav-cta-mobile">Reserve</a></li>
+    </ul>
+    <a href="reservations.html" class="btn btn-primary nav-cta">Reserve a Table</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=85')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Gallery</span></div>
+    <h1>Our Gallery</h1>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:48px">
+      <span class="section-label">Visual Story</span>
+      <h2 class="section-title">Food, Ambiance &amp; Moments</h2>
+      <div class="divider centered"></div>
+      <p class="section-subtitle">A glimpse into the world of Restaurant ELiZ — where every dish is an experience.</p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="menu-tabs reveal" style="margin-bottom:40px">
+      <button class="tab-btn active" data-filter="all" onclick="filterGallery('all',this)">All</button>
+      <button class="tab-btn" data-filter="food" onclick="filterGallery('food',this)">Food</button>
+      <button class="tab-btn" data-filter="interior" onclick="filterGallery('interior',this)">Interior</button>
+      <button class="tab-btn" data-filter="drinks" onclick="filterGallery('drinks',this)">Drinks</button>
+      <button class="tab-btn" data-filter="team" onclick="filterGallery('team',this)">Kitchen</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item reveal" data-cat="food">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=85" alt="Adana Kebab on charcoal grill" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal delay-1" data-cat="interior">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=85" alt="Restaurant interior" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal delay-2" data-cat="food">
+        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=85" alt="Baklava dessert" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal" data-cat="food">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=85" alt="Turkish food spread" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal delay-1" data-cat="drinks">
+        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=600&q=85" alt="Turkish tea" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal delay-2" data-cat="interior">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=85" alt="Dining room ambiance" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal" data-cat="food">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=85" alt="Fresh salad" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal delay-1" data-cat="team">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=85" alt="Chef in kitchen" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal delay-2" data-cat="food">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=85" alt="Meze platter" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal" data-cat="drinks">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=85" alt="Turkish coffee" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal delay-1" data-cat="food">
+        <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=600&q=85" alt="Shish kebab" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal delay-2" data-cat="interior">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=85" alt="Restaurant table setting" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal" data-cat="food">
+        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=85" alt="Soup" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal delay-1" data-cat="team">
+        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=85" alt="Head chef" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal delay-2" data-cat="food">
+        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=85" alt="Fresh ingredients" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightboxClose">&times;</span>
+  <img src="" alt="Gallery image" id="lightboxImg" />
+</div>
+
+<!-- INSTAGRAM CTA -->
+<section class="bg-cream compact">
+  <div class="container text-center reveal">
+    <span class="section-label">Follow Our Journey</span>
+    <h2 class="section-title">We're on Instagram</h2>
+    <p class="section-subtitle" style="margin:0 auto 28px">Tag us in your photos and use <strong>#RestaurantELiZ</strong> for a chance to be featured.</p>
+    <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-primary btn-lg"><i class="fab fa-instagram"></i> @restauranteliz</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h3 class="footer-logo">Restaurant <span>ELiZ</span></h3><p class="footer-about">Authentic Turkish cuisine crafted with passion since 2012.</p><div class="social-links"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-tiktok"></i></a></div></div>
+      <div><h4>Quick Links</h4><ul class="footer-links-list"><li><a href="menu.html">Our Menu</a></li><li><a href="reservations.html">Reservations</a></li><li><a href="order.html">Order Online</a></li><li><a href="events.html">Events</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div><h4>Opening Hours</h4><ul class="footer-hours"><li><span>Mon – Thu</span><span>12:00 – 22:00</span></li><li><span>Fri – Sat</span><span class="open">12:00 – 23:30</span></li><li><span>Sunday</span><span>13:00 – 22:00</span></li></ul></div>
+      <div><h4>Contact Us</h4><ul class="footer-contact-list"><li><i class="fas fa-map-marker-alt"></i><span>123 Ottoman Street, Berlin 10115</span></li><li><i class="fas fa-phone"></i><span>+49 30 1234 5678</span></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Restaurant ELiZ. All rights reserved.</p><p>Made with ❤️ in Berlin</p></div>
+  </div>
+</footer>
+<a href="https://wa.me/4930123456" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script src="js/main.js"></script>
+<script>
+function filterGallery(cat, btn) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.style.display = (cat === 'all' || item.dataset.cat === cat) ? 'block' : 'none';
+  });
+}
+</script>
+</body>
+</html>

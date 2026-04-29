@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Events and Specials at Restaurant ELiZ Berlin — Weekly specials, live music, Ramadan Iftar, private event booking." />
+  <title>Events &amp; Specials — Restaurant ELiZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;1,400;1,700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar transparent" id="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="nav-logo"><div class="logo-icon">☽</div><span class="logo-text">Restaurant <strong>ELiZ</strong></span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="events.html">Events</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="order.html">Order Online</a></li><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li>
+      <li><a href="reservations.html" class="btn btn-primary nav-cta-mobile">Reserve</a></li>
+    </ul>
+    <a href="reservations.html" class="btn btn-primary nav-cta">Reserve a Table</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=85')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Events &amp; Specials</span></div>
+    <h1>Events &amp; Specials</h1>
+  </div>
+</section>
+
+<!-- WEEKLY SPECIALS -->
+<section>
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:48px">
+      <span class="section-label">This Week</span>
+      <h2 class="section-title">Weekly Specials</h2>
+      <div class="divider centered"></div>
+      <p class="section-subtitle">Every week, Chef Mehmet crafts a limited special using the finest seasonal ingredients.</p>
+    </div>
+    <div class="special-banner reveal">
+      <div>
+        <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.2em;color:rgba(255,255,255,0.6);margin-bottom:8px">⭐ This Week's Special</div>
+        <h3>Slow-Roasted Lamb Shoulder</h3>
+        <p>12-hour oven-roasted whole lamb shoulder with pomegranate glaze, herb rice, and grilled seasonal vegetables. Serves 2.</p>
+      </div>
+      <div style="text-align:center">
+        <div class="special-price">€34 <span>for two</span></div>
+        <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);margin-top:4px">Available Fri–Sun only</div>
+      </div>
+      <a href="reservations.html" class="btn btn-white">Book Now</a>
+    </div>
+
+    <!-- WEEKLY DAY SPECIALS -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:40px">
+      <div class="event-card reveal" style="padding:0">
+        <div style="background:var(--teal);padding:14px 20px;color:white;font-weight:800;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em">Monday</div>
+        <div style="padding:20px">
+          <strong>Meze Monday</strong>
+          <p style="font-size:0.85rem;margin:8px 0">All starter platters 20% off. Perfect for sharing with friends.</p>
+          <span style="color:var(--teal);font-weight:700;font-size:0.85rem">20% OFF Starters</span>
+        </div>
+      </div>
+      <div class="event-card reveal delay-1" style="padding:0">
+        <div style="background:var(--charcoal-mid);padding:14px 20px;color:white;font-weight:800;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em">Tuesday</div>
+        <div style="padding:20px">
+          <strong>Family Feast</strong>
+          <p style="font-size:0.85rem;margin:8px 0">2 mains + 2 starters + soft drinks for 2 people.</p>
+          <span style="color:var(--teal);font-weight:700;font-size:0.85rem">Set Menu €45</span>
+        </div>
+      </div>
+      <div class="event-card reveal delay-2" style="padding:0">
+        <div style="background:var(--gold);padding:14px 20px;color:white;font-weight:800;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em">Wednesday</div>
+        <div style="padding:20px">
+          <strong>Wine &amp; Dine</strong>
+          <p style="font-size:0.85rem;margin:8px 0">Complimentary house wine with every main course ordered.</p>
+          <span style="color:var(--teal);font-weight:700;font-size:0.85rem">Free Wine</span>
+        </div>
+      </div>
+      <div class="event-card reveal" style="padding:0">
+        <div style="background:var(--teal-dark);padding:14px 20px;color:white;font-weight:800;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em">Thursday</div>
+        <div style="padding:20px">
+          <strong>Student Night</strong>
+          <p style="font-size:0.85rem;margin:8px 0">15% student discount with valid student ID. All day.</p>
+          <span style="color:var(--teal);font-weight:700;font-size:0.85rem">15% Student Disc.</span>
+        </div>
+      </div>
+      <div class="event-card reveal delay-1" style="padding:0">
+        <div style="background:#E53E3E;padding:14px 20px;color:white;font-weight:800;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em">Friday</div>
+        <div style="padding:20px">
+          <strong>Live Music Evening</strong>
+          <p style="font-size:0.85rem;margin:8px 0">Live oud and saz music from 20:00. No cover charge.</p>
+          <span style="color:var(--teal);font-weight:700;font-size:0.85rem">From 20:00</span>
+        </div>
+      </div>
+      <div class="event-card reveal delay-2" style="padding:0">
+        <div style="background:var(--charcoal);padding:14px 20px;color:white;font-weight:800;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em">Weekend</div>
+        <div style="padding:20px">
+          <strong>Sunday Brunch Buffet</strong>
+          <p style="font-size:0.85rem;margin:8px 0">All-you-can-eat Turkish brunch 12:00–16:00. Book ahead!</p>
+          <span style="color:var(--teal);font-weight:700;font-size:0.85rem">€24 per person</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING EVENTS -->
+<section class="bg-cream">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:48px">
+      <span class="section-label">Calendar</span>
+      <h2 class="section-title">Upcoming Events</h2>
+      <div class="divider centered"></div>
+    </div>
+    <div class="events-grid">
+      <div class="event-card reveal">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=85" alt="Live Music" loading="lazy" />
+          <div class="event-date-badge"><span class="day">16</span><span class="month">May</span></div>
+        </div>
+        <div class="event-card-body">
+          <div class="event-card-title">Turkish Folk Music Night</div>
+          <div class="event-card-desc">Join us for a special evening of live traditional Turkish music featuring oud, bağlama, and vocals. Dinner reservation required.</div>
+          <div class="event-meta">
+            <span><i class="fas fa-clock"></i> 19:00 – 23:00</span>
+            <span><i class="fas fa-ticket"></i> Free entry</span>
+            <span><i class="fas fa-users"></i> Limited seats</span>
+          </div>
+          <a href="reservations.html" class="btn btn-primary" style="margin-top:16px;font-size:0.82rem;padding:10px 20px">Reserve Your Seat</a>
+        </div>
+      </div>
+      <div class="event-card reveal delay-1">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=85" alt="Turkish Brunch" loading="lazy" />
+          <div class="event-date-badge"><span class="day">25</span><span class="month">May</span></div>
+        </div>
+        <div class="event-card-body">
+          <div class="event-card-title">Grand Turkish Brunch Buffet</div>
+          <div class="event-card-desc">A sprawling buffet of over 40 Turkish breakfast and brunch dishes. Simit, börek, cheese boards, eggs, and much more.</div>
+          <div class="event-meta">
+            <span><i class="fas fa-clock"></i> 11:00 – 16:00</span>
+            <span><i class="fas fa-ticket"></i> €24/person</span>
+          </div>
+          <a href="reservations.html" class="btn btn-primary" style="margin-top:16px;font-size:0.82rem;padding:10px 20px">Book Brunch</a>
+        </div>
+      </div>
+      <div class="event-card reveal delay-2">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=85" alt="Private Dining" loading="lazy" />
+          <div class="event-date-badge" style="background:var(--gold)"><span class="day">01</span><span class="month">Jun</span></div>
+        </div>
+        <div class="event-card-body">
+          <div class="event-card-title">Eid Celebration Dinner</div>
+          <div class="event-card-desc">Special Eid al-Adha celebration menu featuring traditional lamb dishes, desserts, and family-style sharing platters.</div>
+          <div class="event-meta">
+            <span><i class="fas fa-clock"></i> 18:00 – 23:00</span>
+            <span><i class="fas fa-ticket"></i> Set menu €38</span>
+          </div>
+          <a href="reservations.html" class="btn btn-primary" style="margin-top:16px;font-size:0.82rem;padding:10px 20px">Book Celebration</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVATE EVENTS -->
+<section>
+  <div class="container">
+    <div class="split-section">
+      <div class="split-image reveal-left">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=900&q=85" alt="Private dining room" loading="lazy" />
+        <div class="split-image-badge">
+          <span class="number">20</span>
+          <span class="label">Max Guests<br/>Private Room</span>
+        </div>
+      </div>
+      <div class="split-content reveal-right">
+        <span class="section-label">Private Dining</span>
+        <h2 class="section-title">Host Your Event With Us</h2>
+        <div class="divider"></div>
+        <p>Our private dining room accommodates up to 20 guests and can be tailored to your requirements — birthdays, corporate dinners, engagements, baby showers, and more.</p>
+        <ul class="check-list">
+          <li><i class="fas fa-check-circle"></i>Fully private room with dedicated service</li>
+          <li><i class="fas fa-check-circle"></i>Bespoke set menus starting from €35/person</li>
+          <li><i class="fas fa-check-circle"></i>AV equipment, projector, and sound system</li>
+          <li><i class="fas fa-check-circle"></i>Custom decorations and cake arrangements</li>
+          <li><i class="fas fa-check-circle"></i>Corporate catering packages available</li>
+        </ul>
+
+        <div class="form-card" style="box-shadow:none;padding:28px;background:var(--cream);margin-top:24px">
+          <h4 style="margin-bottom:20px">Quick Event Enquiry</h4>
+          <form id="eventForm">
+            <div class="form-grid">
+              <div class="form-group"><label>Name</label><input type="text" name="name" placeholder="Your name" required /></div>
+              <div class="form-group"><label>Phone</label><input type="tel" name="phone" placeholder="+49..." required /></div>
+              <div class="form-group"><label>Event Type</label>
+                <select name="type"><option>Birthday</option><option>Anniversary</option><option>Corporate</option><option>Engagement</option><option>Other</option></select>
+              </div>
+              <div class="form-group"><label>Number of Guests</label><input type="number" name="guests" placeholder="e.g. 15" min="5" max="200" /></div>
+              <div class="form-group"><label>Preferred Date</label><input type="date" name="date" /></div>
+              <div class="form-group"><label>Budget (per person)</label><select name="budget"><option>€25–€35</option><option>€35–€50</option><option>€50+</option><option>To discuss</option></select></div>
+              <div class="form-group full"><label>Message</label><textarea name="message" placeholder="Tell us about your event..."></textarea></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="margin-top:16px;width:100%;justify-content:center"><i class="fas fa-paper-plane"></i> Send Enquiry</button>
+          </form>
+          <div class="form-success" id="eventSuccess">
+            <div class="success-icon"><i class="fas fa-check"></i></div>
+            <h3>Enquiry Sent!</h3>
+            <p>Thank you! Our events team will contact you within 24 hours to discuss your event.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h3 class="footer-logo">Restaurant <span>ELiZ</span></h3><p class="footer-about">Authentic Turkish cuisine crafted with passion since 2012.</p><div class="social-links"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-tiktok"></i></a></div></div>
+      <div><h4>Quick Links</h4><ul class="footer-links-list"><li><a href="menu.html">Our Menu</a></li><li><a href="reservations.html">Reservations</a></li><li><a href="order.html">Order Online</a></li><li><a href="events.html">Events</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div><h4>Opening Hours</h4><ul class="footer-hours"><li><span>Mon – Thu</span><span>12:00 – 22:00</span></li><li><span>Fri – Sat</span><span class="open">12:00 – 23:30</span></li><li><span>Sunday</span><span>13:00 – 22:00</span></li></ul></div>
+      <div><h4>Contact Us</h4><ul class="footer-contact-list"><li><i class="fas fa-map-marker-alt"></i><span>123 Ottoman Street, Berlin 10115</span></li><li><i class="fas fa-phone"></i><span>+49 30 1234 5678</span></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Restaurant ELiZ. All rights reserved.</p><p>Made with ❤️ in Berlin</p></div>
+  </div>
+</footer>
+<a href="https://wa.me/4930123456" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script src="js/main.js"></script>
+</body>
+</html>

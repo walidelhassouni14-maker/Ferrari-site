@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reserve a table at Restaurant ELiZ — Book online in seconds. Groups, birthdays, and private dining available." />
+  <title>Reservations — Restaurant ELiZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;1,400;1,700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar transparent" id="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="nav-logo"><div class="logo-icon">☽</div><span class="logo-text">Restaurant <strong>ELiZ</strong></span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="events.html">Events</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="order.html">Order Online</a></li><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li>
+      <li><a href="reservations.html" class="btn btn-primary nav-cta-mobile">Reserve</a></li>
+    </ul>
+    <a href="reservations.html" class="btn btn-primary nav-cta">Reserve a Table</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=85')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Reservations</span></div>
+    <h1>Reserve a Table</h1>
+  </div>
+</section>
+
+<section class="bg-cream">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 420px;gap:56px;align-items:start" class="res-layout">
+
+      <!-- FORM -->
+      <div class="reveal">
+        <div class="form-card">
+          <div style="margin-bottom:32px">
+            <span class="section-label">Online Booking</span>
+            <h2 class="section-title" style="font-size:1.8rem">Book Your Table</h2>
+            <p style="font-size:0.9rem">Complete the form below and we will confirm your reservation within 30 minutes by phone or email.</p>
+          </div>
+
+          <form id="reservationForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="phone"><i class="fas fa-phone"></i> Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+49 30 ..." required />
+              </div>
+              <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" />
+              </div>
+              <div class="form-group">
+                <label for="guests"><i class="fas fa-users"></i> Number of Guests *</label>
+                <select id="guests" name="guests" required>
+                  <option value="">Select guests</option>
+                  <option value="1">1 person</option>
+                  <option value="2">2 people</option>
+                  <option value="3">3 people</option>
+                  <option value="4">4 people</option>
+                  <option value="5">5 people</option>
+                  <option value="6">6 people</option>
+                  <option value="7–9">7–9 people</option>
+                  <option value="10+">10+ (Private dining)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="date"><i class="fas fa-calendar"></i> Date *</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time"><i class="fas fa-clock"></i> Preferred Time *</label>
+                <select id="time" name="time" required>
+                  <option value="">Select time</option>
+                  <option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option>
+                  <option>14:00</option><option>14:30</option><option>15:00</option><option>17:00</option>
+                  <option>17:30</option><option>18:00</option><option>18:30</option><option>19:00</option>
+                  <option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option>
+                  <option>21:30</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="occasion"><i class="fas fa-gift"></i> Special Occasion</label>
+                <select id="occasion" name="occasion">
+                  <option value="">None</option>
+                  <option>Birthday</option>
+                  <option>Anniversary</option>
+                  <option>Business Dinner</option>
+                  <option>Engagement</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="section"><i class="fas fa-chair"></i> Seating Preference</label>
+                <select id="section" name="section">
+                  <option value="">No preference</option>
+                  <option>Main Dining Room</option>
+                  <option>Private Booth</option>
+                  <option>Terrace (seasonal)</option>
+                  <option>Private Dining Room</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="notes"><i class="fas fa-comment"></i> Special Requests</label>
+                <textarea id="notes" name="notes" placeholder="Allergies, high chair needed, wheelchair access, birthday cake, etc."></textarea>
+              </div>
+              <div class="form-group full">
+                <div style="display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:var(--text-mid)">
+                  <input type="checkbox" id="agree" required style="width:auto;margin-top:3px" />
+                  <label for="agree" style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--text-mid)">I agree to the <a href="#" style="color:var(--teal)">cancellation policy</a>. Cancellations must be made 2 hours before your reservation.</label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="margin-top:24px;width:100%;justify-content:center">
+              <i class="fas fa-calendar-check"></i> Confirm Reservation
+            </button>
+          </form>
+
+          <!-- SUCCESS MESSAGE -->
+          <div class="form-success" id="reservationSuccess">
+            <div class="success-icon"><i class="fas fa-check"></i></div>
+            <h3 style="margin-bottom:8px">Reservation Confirmed!</h3>
+            <p style="margin-bottom:20px">Thank you, <strong id="confirmName"></strong>! Your table for <strong id="confirmGuests"></strong> on <strong id="confirmDate"></strong> at <strong id="confirmTime"></strong> has been received.</p>
+            <p style="font-size:0.88rem;color:var(--text-light)">We will send a confirmation to your phone within 30 minutes. See you soon! 🌙</p>
+            <a href="index.html" class="btn btn-primary" style="margin-top:24px">Back to Home</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="reveal delay-2">
+        <div style="background:var(--charcoal);border-radius:var(--radius-lg);padding:36px;color:var(--white);margin-bottom:24px">
+          <h3 style="color:var(--white);margin-bottom:6px"><i class="fas fa-clock" style="color:var(--teal);margin-right:8px"></i>Opening Hours</h3>
+          <p style="color:rgba(255,255,255,0.5);font-size:0.85rem;margin-bottom:20px">Kitchen closes 30 min before closing time</p>
+          <div class="hours-table" style="border-top:none;padding-top:0">
+            <div class="hours-row"><span>Monday – Thursday</span><span class="open">12:00 – 22:00</span></div>
+            <div class="hours-row"><span>Friday</span><span class="open">12:00 – 23:30</span></div>
+            <div class="hours-row"><span>Saturday</span><span class="open">12:00 – 23:30</span></div>
+            <div class="hours-row"><span>Sunday</span><span class="open">13:00 – 22:00</span></div>
+          </div>
+        </div>
+        <div style="background:var(--white);border-radius:var(--radius-lg);padding:28px;box-shadow:var(--shadow-sm);border:1px solid var(--border);margin-bottom:20px">
+          <h4 style="margin-bottom:16px"><i class="fas fa-phone" style="color:var(--teal);margin-right:8px"></i>Prefer to Call?</h4>
+          <p style="font-size:0.88rem;color:var(--text-mid);margin-bottom:12px">Our team is available Mon–Sun 11:00–22:00</p>
+          <a href="tel:+4930123456" class="btn btn-primary" style="width:100%;justify-content:center">+49 30 1234 5678</a>
+        </div>
+        <div style="background:var(--teal-xlight);border-radius:var(--radius);padding:20px;border-left:4px solid var(--teal)">
+          <strong style="color:var(--teal-dark);font-size:0.88rem"><i class="fas fa-info-circle"></i> Good to Know</strong>
+          <ul style="margin-top:10px;font-size:0.82rem;color:var(--text-mid);display:flex;flex-direction:column;gap:6px">
+            <li>• Walk-ins welcome, subject to availability</li>
+            <li>• Groups of 10+ require private dining booking</li>
+            <li>• Children welcome — high chairs available</li>
+            <li>• Free parking in Ottoman Street car park</li>
+            <li>• Service charge not included in menu prices</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media(max-width:900px){.res-layout{grid-template-columns:1fr!important}}
+</style>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h3 class="footer-logo">Restaurant <span>ELiZ</span></h3><p class="footer-about">Authentic Turkish cuisine crafted with passion since 2012.</p><div class="social-links"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-tiktok"></i></a></div></div>
+      <div><h4>Quick Links</h4><ul class="footer-links-list"><li><a href="menu.html">Our Menu</a></li><li><a href="reservations.html">Reservations</a></li><li><a href="order.html">Order Online</a></li><li><a href="events.html">Events</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div><h4>Opening Hours</h4><ul class="footer-hours"><li><span>Mon – Thu</span><span>12:00 – 22:00</span></li><li><span>Fri – Sat</span><span class="open">12:00 – 23:30</span></li><li><span>Sunday</span><span>13:00 – 22:00</span></li></ul></div>
+      <div><h4>Contact Us</h4><ul class="footer-contact-list"><li><i class="fas fa-map-marker-alt"></i><span>123 Ottoman Street, Berlin 10115</span></li><li><i class="fas fa-phone"></i><span>+49 30 1234 5678</span></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Restaurant ELiZ. All rights reserved.</p><p>Made with ❤️ in Berlin</p></div>
+  </div>
+</footer>
+<a href="https://wa.me/4930123456" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script src="js/main.js"></script>
+</body>
+</html>

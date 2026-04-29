@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Restaurant ELiZ full menu — Starters, Mains, Grills, Desserts, and Drinks. Authentic Turkish cuisine in Berlin." />
+  <title>Menu — Restaurant ELiZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;1,400;1,700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar transparent" id="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">☽</div>
+      <span class="logo-text">Restaurant <strong>ELiZ</strong></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="order.html">Order Online</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="reservations.html" class="btn btn-primary nav-cta-mobile">Reserve</a></li>
+    </ul>
+    <a href="reservations.html" class="btn btn-primary nav-cta">Reserve a Table</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=85')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Menu</span></div>
+    <h1>Our Menu</h1>
+  </div>
+</section>
+
+<!-- ALLERGEN NOTE -->
+<div style="background:var(--gold-light);border-left:4px solid var(--gold);padding:16px 24px;margin:0">
+  <div class="container" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+    <i class="fas fa-info-circle" style="color:var(--gold);font-size:1.1rem"></i>
+    <span style="font-size:0.88rem;color:#7a5c00"><strong>Allergen Info:</strong> Please inform your server of any allergies. Full allergen list available on request. All dishes are prepared in a kitchen that handles nuts, gluten, and dairy.</span>
+    <div style="margin-left:auto;display:flex;gap:16px;font-size:0.8rem;font-weight:700">
+      <span style="color:#2F855A">🌱 V = Vegetarian</span>
+      <span style="color:#E53E3E">🌶 = Spicy</span>
+      <span style="color:var(--teal)">H = Halal</span>
+    </div>
+  </div>
+</div>
+
+<!-- MENU -->
+<section>
+  <div class="container">
+    <div class="menu-tabs reveal">
+      <button class="tab-btn active" data-tab="starters"><i class="fas fa-seedling"></i> Starters</button>
+      <button class="tab-btn" data-tab="mains"><i class="fas fa-bowl-food"></i> Mains</button>
+      <button class="tab-btn" data-tab="grills"><i class="fas fa-fire-burner"></i> Grills</button>
+      <button class="tab-btn" data-tab="desserts"><i class="fas fa-ice-cream"></i> Desserts</button>
+      <button class="tab-btn" data-tab="drinks"><i class="fas fa-mug-hot"></i> Drinks</button>
+    </div>
+
+    <!-- STARTERS -->
+    <div class="menu-panel menu-grid" data-tab="starters">
+      <div class="menu-card reveal">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=85" alt="Hummus" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Hummus with Warm Pita</span><span class="menu-card-price">€7.50</span></div>
+          <p class="menu-card-desc">Velvety chickpea hummus with tahini, drizzled with olive oil and dusted with paprika. Served with warm toasted pita.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V</span><span class="tag">H</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-1">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=600&q=85" alt="Ezme" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Ezme (Spicy Tomato Dip)</span><span class="menu-card-price">€6.50</span></div>
+          <p class="menu-card-desc">Finely chopped tomatoes, red peppers, onion, and parsley in pomegranate molasses dressing.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V</span><span class="tag hot">🌶 Spicy</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-2">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=85" alt="Cacık" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Cacık (Yogurt & Cucumber)</span><span class="menu-card-price">€6.00</span></div>
+          <p class="menu-card-desc">Cool strained yogurt with grated cucumber, fresh mint, and a drizzle of extra-virgin olive oil.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V</span><span class="tag">Refreshing</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=85" alt="Stuffed Vine Leaves" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Stuffed Vine Leaves</span><span class="menu-card-price">€8.50</span></div>
+          <p class="menu-card-desc">Hand-rolled grape leaves filled with herb rice, pine nuts, and currants. Served cold with lemon wedge.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V</span><span class="tag">6 pcs</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-1">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=85" alt="Sigara Böreği" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Sigara Böreği</span><span class="menu-card-price">€7.00</span></div>
+          <p class="menu-card-desc">Crispy rolled phyllo pastry filled with white cheese and fresh dill, fried golden. Served with tomato dip.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V</span><span class="tag">6 pcs</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-2">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=85" alt="Mixed Meze" loading="lazy" />
+        <span class="menu-card-badge">⭐ Best Seller</span></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Mixed Meze Platter</span><span class="menu-card-price">€16.00</span></div>
+          <p class="menu-card-desc">A generous sharing board with hummus, ezme, cacık, vine leaves, böreği, and warm pita. Perfect for two.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V Option</span><span class="tag">Sharing</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAINS -->
+    <div class="menu-panel menu-grid" data-tab="mains" style="display:none">
+      <div class="menu-card reveal">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=600&q=85" alt="Lamb Stew" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Kuzu Güveç (Lamb Stew)</span><span class="menu-card-price">€19.50</span></div>
+          <p class="menu-card-desc">Slow-braised lamb shoulder with seasonal vegetables in a rich tomato and herb sauce. Served in a clay pot.</p>
+          <div class="menu-card-tags"><span class="tag">H</span><span class="tag new">Chef's Special</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-1">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=85" alt="Iskender" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">İskender Kebab</span><span class="menu-card-price">€21.00</span></div>
+          <p class="menu-card-desc">Thin-sliced döner meat over crispy pide bread, drenched in hot tomato butter sauce and cool yogurt.</p>
+          <div class="menu-card-tags"><span class="tag">H</span><span class="tag">Bursa Style</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-2">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=85" alt="Moussaka" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Turkish Moussaka</span><span class="menu-card-price">€17.00</span></div>
+          <p class="menu-card-desc">Layers of fried aubergine with spiced ground beef, baked in a tomato béchamel. Served with pilaf rice.</p>
+          <div class="menu-card-tags"><span class="tag">H</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&q=85" alt="Chicken Casserole" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Chicken Casserole</span><span class="menu-card-price">€18.00</span></div>
+          <p class="menu-card-desc">Free-range chicken thighs with peppers, potatoes, and tomatoes in a herbed sauce. Traditional comfort food.</p>
+          <div class="menu-card-tags"><span class="tag">H</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-1">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=600&q=85" alt="Vegetarian Kofte" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Vegetarian Mercimek Köfte</span><span class="menu-card-price">€15.50</span></div>
+          <p class="menu-card-desc">Red lentil and bulgur patties with spring onion, parsley, and cumin. Served with cos lettuce and lemon.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 Vegan</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-2">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1551248429-40975aa4de74?auto=format&fit=crop&w=600&q=85" alt="Pide" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Turkish Pide (Flatbread)</span><span class="menu-card-price">€16.50</span></div>
+          <p class="menu-card-desc">Boat-shaped flatbread topped with spiced ground lamb, cheese, or spinach &amp; egg. Baked in stone oven.</p>
+          <div class="menu-card-tags"><span class="tag">H</span><span class="tag veg">V Option</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRILLS -->
+    <div class="menu-panel menu-grid" data-tab="grills" style="display:none">
+      <div class="menu-card reveal">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=85" alt="Adana Kebab" loading="lazy" />
+        <span class="menu-card-badge">⭐ Most Ordered</span></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Adana Kebab</span><span class="menu-card-price">€22.00</span></div>
+          <p class="menu-card-desc">Spiced minced lamb on charcoal skewers with sumac onions, grilled tomato, and lavash bread.</p>
+          <div class="menu-card-tags"><span class="tag hot">🌶 Spicy</span><span class="tag">H</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-1">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=600&q=85" alt="Shish Kebab" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Lamb Shish Kebab</span><span class="menu-card-price">€21.50</span></div>
+          <p class="menu-card-desc">Marinated lamb cubes on skewers, grilled over charcoal. Served with bulgur pilaf and grilled vegetables.</p>
+          <div class="menu-card-tags"><span class="tag">H</span><span class="tag">Charcoal Grilled</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-2">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=85" alt="Mixed Grill" loading="lazy" />
+        <span class="menu-card-badge new">Sharing</span></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Mixed Grill Platter</span><span class="menu-card-price">€28.00</span></div>
+          <p class="menu-card-desc">A feast for two: Adana, shish, chicken shish, köfte, lamb chop, with all the trimmings. Served on an iron skillet.</p>
+          <div class="menu-card-tags"><span class="tag">H</span><span class="tag">For 2</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1602030638412-bb8dcc0bc8b0?auto=format&fit=crop&w=600&q=85" alt="Lamb Chops" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Grilled Lamb Chops</span><span class="menu-card-price">€26.00</span></div>
+          <p class="menu-card-desc">Four frenched lamb cutlets marinated in rosemary and garlic, seared over high heat. With roasted potatoes.</p>
+          <div class="menu-card-tags"><span class="tag">H</span><span class="tag new">Premium</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-1">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=85" alt="Chicken Shish" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Chicken Shish</span><span class="menu-card-price">€19.00</span></div>
+          <p class="menu-card-desc">Marinated free-range chicken breast on skewers with peppers and onions. Served with rice and salad.</p>
+          <div class="menu-card-tags"><span class="tag">H</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-2">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=600&q=85" alt="Kofte" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Köfte (Grilled Meatballs)</span><span class="menu-card-price">€18.50</span></div>
+          <p class="menu-card-desc">Hand-formed beef and lamb köfte seasoned with cumin and onion. Served with tomato sauce and pita.</p>
+          <div class="menu-card-tags"><span class="tag">H</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="menu-panel menu-grid" data-tab="desserts" style="display:none">
+      <div class="menu-card reveal">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=85" alt="Baklava" loading="lazy" />
+        <span class="menu-card-badge">⭐ House Special</span></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Pistachio Baklava</span><span class="menu-card-price">€7.50</span></div>
+          <p class="menu-card-desc">Thin layers of hand-rolled phyllo with crushed Antep pistachios, soaked in orange-blossom honey syrup. 3 pieces.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V</span><span class="tag new">Gaziantep Style</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-1">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=85" alt="Künefe" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Künefe</span><span class="menu-card-price">€9.00</span></div>
+          <p class="menu-card-desc">Shredded wheat pastry filled with soft white cheese, baked until golden and soaked in syrup. Served warm with cream.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V</span><span class="tag">Warm</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-2">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=85" alt="Sütlaç" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Sütlaç (Rice Pudding)</span><span class="menu-card-price">€6.50</span></div>
+          <p class="menu-card-desc">Baked Ottoman-style rice pudding with a caramelised top, scented with rose water. Served chilled.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?auto=format&fit=crop&w=600&q=85" alt="Turkish Delight" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Turkish Delight Selection</span><span class="menu-card-price">€5.00</span></div>
+          <p class="menu-card-desc">A gift box of imported lokum from Istanbul — rose, pistachio, and pomegranate. Served with Turkish coffee.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-1">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1602351447937-745cb720612f?auto=format&fit=crop&w=600&q=85" alt="Chocolate Lava Cake" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Chocolate Lava Cake</span><span class="menu-card-price">€8.00</span></div>
+          <p class="menu-card-desc">Warm Belgian chocolate fondant with a molten centre, served with vanilla ice cream and raspberry coulis.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DRINKS -->
+    <div class="menu-panel menu-grid" data-tab="drinks" style="display:none">
+      <div class="menu-card reveal">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=600&q=85" alt="Turkish Tea" loading="lazy" />
+        <span class="menu-card-badge">☕ Traditional</span></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Turkish Çay (Tea)</span><span class="menu-card-price">€2.50</span></div>
+          <p class="menu-card-desc">Traditional double-brewed black tea in a tulip glass, served with two sugar cubes on the side.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-1">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=85" alt="Turkish Coffee" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Turkish Coffee</span><span class="menu-card-price">€3.50</span></div>
+          <p class="menu-card-desc">Finely ground coffee brewed in a copper cezve, served with Turkish delight. Choose: unsweetened, medium, or sweet.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-2">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?auto=format&fit=crop&w=600&q=85" alt="Ayran" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Ayran (Yogurt Drink)</span><span class="menu-card-price">€3.00</span></div>
+          <p class="menu-card-desc">Chilled and frothy salted yogurt drink — the perfect complement to grilled dishes.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V</span><span class="tag">Chilled</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=600&q=85" alt="Lemonade" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Fresh Mint Lemonade</span><span class="menu-card-price">€4.50</span></div>
+          <p class="menu-card-desc">Hand-pressed lemons with fresh mint, a touch of honey, and sparkling water. Refreshing and seasonal.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 Vegan</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-1">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1474790407853-fd9f0b6c6c24?auto=format&fit=crop&w=600&q=85" alt="Pomegranate Juice" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Fresh Pomegranate Juice</span><span class="menu-card-price">€4.50</span></div>
+          <p class="menu-card-desc">Pure cold-pressed pomegranate juice — rich, antioxidant-packed, and vibrant. Squeezed fresh to order.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 Vegan</span></div>
+        </div>
+      </div>
+      <div class="menu-card reveal delay-2">
+        <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1561758033-7e924f619b47?auto=format&fit=crop&w=600&q=85" alt="Soft Drinks" loading="lazy" /></div>
+        <div class="menu-card-body">
+          <div class="menu-card-header"><span class="menu-card-name">Soft Drinks</span><span class="menu-card-price">€3.00</span></div>
+          <p class="menu-card-desc">Coca-Cola, Sprite, Fanta, sparkling water, or still water. All served chilled over ice.</p>
+          <div class="menu-card-tags"><span class="tag veg">🌱 V</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALLERGEN INFO -->
+<section class="bg-cream compact">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:32px">
+      <span class="section-label">Dietary Information</span>
+      <h2 class="section-title">We Cater for Everyone</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px">
+      <div style="background:var(--white);padding:24px;border-radius:var(--radius);text-align:center;box-shadow:var(--shadow-sm)" class="reveal">
+        <div style="font-size:2rem;margin-bottom:10px">🌱</div>
+        <strong>Vegetarian</strong>
+        <p style="font-size:0.85rem;margin-top:4px">12 dishes available</p>
+      </div>
+      <div style="background:var(--white);padding:24px;border-radius:var(--radius);text-align:center;box-shadow:var(--shadow-sm)" class="reveal delay-1">
+        <div style="font-size:2rem;margin-bottom:10px">🥬</div>
+        <strong>Vegan</strong>
+        <p style="font-size:0.85rem;margin-top:4px">8 dishes available</p>
+      </div>
+      <div style="background:var(--white);padding:24px;border-radius:var(--radius);text-align:center;box-shadow:var(--shadow-sm)" class="reveal delay-2">
+        <div style="font-size:2rem;margin-bottom:10px">✅</div>
+        <strong>Halal Certified</strong>
+        <p style="font-size:0.85rem;margin-top:4px">All meat dishes</p>
+      </div>
+      <div style="background:var(--white);padding:24px;border-radius:var(--radius);text-align:center;box-shadow:var(--shadow-sm)" class="reveal delay-3">
+        <div style="font-size:2rem;margin-bottom:10px">🌾</div>
+        <strong>Gluten-Free</strong>
+        <p style="font-size:0.85rem;margin-top:4px">Options on request</p>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:0.85rem;color:var(--text-light);margin-top:24px" class="reveal">Full allergen information available. Please speak to your server before ordering if you have any dietary requirements.</p>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <span class="section-label">Ready to Dine?</span>
+      <h2>Book Your Table Today</h2>
+      <p>Reserve your spot and we'll have your favourites ready and waiting.</p>
+      <div class="cta-buttons">
+        <a href="reservations.html" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Reserve a Table</a>
+        <a href="order.html" class="btn btn-white btn-lg"><i class="fas fa-motorcycle"></i> Order Delivery</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h3 class="footer-logo">Restaurant <span>ELiZ</span></h3><p class="footer-about">Authentic Turkish cuisine crafted with passion since 2012.</p><div class="social-links"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-tiktok"></i></a><a href="#"><i class="fab fa-tripadvisor"></i></a></div></div>
+      <div><h4>Quick Links</h4><ul class="footer-links-list"><li><a href="menu.html">Our Menu</a></li><li><a href="reservations.html">Reservations</a></li><li><a href="order.html">Order Online</a></li><li><a href="events.html">Events</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div><h4>Opening Hours</h4><ul class="footer-hours"><li><span>Mon – Thu</span><span>12:00 – 22:00</span></li><li><span>Fri – Sat</span><span class="open">12:00 – 23:30</span></li><li><span>Sunday</span><span>13:00 – 22:00</span></li></ul></div>
+      <div><h4>Contact Us</h4><ul class="footer-contact-list"><li><i class="fas fa-map-marker-alt"></i><span>123 Ottoman Street, Berlin 10115</span></li><li><i class="fas fa-phone"></i><span>+49 30 1234 5678</span></li><li><i class="fas fa-envelope"></i><span>info@restauranteliz.com</span></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Restaurant ELiZ. All rights reserved.</p><p>Made with ❤️ in Berlin</p></div>
+  </div>
+</footer>
+<a href="https://wa.me/4930123456" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script src="js/main.js"></script>
+</body>
+</html>

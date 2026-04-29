@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Order Turkish food online from Restaurant ELiZ Berlin. Delivery and collection available. Free delivery over €30." />
+  <title>Order Online — Restaurant ELiZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;1,400;1,700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar transparent" id="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="nav-logo"><div class="logo-icon">☽</div><span class="logo-text">Restaurant <strong>ELiZ</strong></span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="events.html">Events</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="order.html">Order Online</a></li><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li>
+      <li><a href="reservations.html" class="btn btn-primary nav-cta-mobile">Reserve</a></li>
+    </ul>
+    <a href="reservations.html" class="btn btn-primary nav-cta">Reserve a Table</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=85')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Order Online</span></div>
+    <h1>Order Online</h1>
+  </div>
+</section>
+
+<!-- DELIVERY INFO STRIP -->
+<div style="background:var(--teal);color:var(--white);padding:14px 0">
+  <div class="container" style="display:flex;justify-content:center;gap:40px;flex-wrap:wrap;font-size:0.85rem;font-weight:700">
+    <span><i class="fas fa-motorcycle"></i> Free delivery over €30</span>
+    <span><i class="fas fa-clock"></i> 30–45 min delivery</span>
+    <span><i class="fas fa-map-marker-alt"></i> Delivery radius: 5km</span>
+    <span><i class="fas fa-store"></i> Collection also available</span>
+  </div>
+</div>
+
+<section class="bg-cream">
+  <div class="container">
+    <div class="order-layout">
+      <!-- MENU ITEMS -->
+      <div>
+        <div id="orderSuccess" class="form-success" style="background:var(--white);border-radius:var(--radius);padding:48px;box-shadow:var(--shadow-md)">
+          <div class="success-icon"><i class="fas fa-check"></i></div>
+          <h3>Order Placed!</h3>
+          <p style="margin:12px 0">Thank you! Your order is being prepared. Estimated delivery: <strong>35–45 minutes</strong>.</p>
+          <p style="font-size:0.85rem;color:var(--text-light)">You will receive an SMS confirmation shortly. Track your order via WhatsApp.</p>
+          <div style="display:flex;gap:12px;justify-content:center;margin-top:24px;flex-wrap:wrap">
+            <a href="order.html" class="btn btn-primary">Order Again</a>
+            <a href="https://wa.me/4930123456" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Track on WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- STARTERS -->
+        <div style="margin-bottom:40px" class="reveal">
+          <h3 style="margin-bottom:20px;display:flex;align-items:center;gap:10px"><span style="color:var(--teal)"><i class="fas fa-seedling"></i></span> Starters</h3>
+          <div class="order-item-card">
+            <img class="order-item-img" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=200&q=80" alt="Hummus" loading="lazy" />
+            <div class="order-item-info"><div class="order-item-name">Hummus with Warm Pita</div><div class="order-item-desc">Velvety chickpea dip with tahini and olive oil</div><div class="order-item-bottom"><span class="order-item-price">€7.50</span><button class="add-to-cart" onclick="addToCart('Hummus with Pita', 7.50, this)">+ Add to Cart</button></div></div>
+          </div>
+          <div class="order-item-card">
+            <img class="order-item-img" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=200&q=80" alt="Mixed Meze" loading="lazy" />
+            <div class="order-item-info"><div class="order-item-name">Mixed Meze Platter</div><div class="order-item-desc">Hummus, ezme, cacık, vine leaves, böreği</div><div class="order-item-bottom"><span class="order-item-price">€16.00</span><button class="add-to-cart" onclick="addToCart('Mixed Meze Platter', 16.00, this)">+ Add to Cart</button></div></div>
+          </div>
+          <div class="order-item-card">
+            <img class="order-item-img" src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=200&q=80" alt="Cacık" loading="lazy" />
+            <div class="order-item-info"><div class="order-item-name">Cacık (Yogurt &amp; Cucumber)</div><div class="order-item-desc">Cool strained yogurt with mint and olive oil</div><div class="order-item-bottom"><span class="order-item-price">€6.00</span><button class="add-to-cart" onclick="addToCart('Cacık', 6.00, this)">+ Add to Cart</button></div></div>
+          </div>
+        </div>
+
+        <!-- GRILLS -->
+        <div style="margin-bottom:40px" class="reveal">
+          <h3 style="margin-bottom:20px;display:flex;align-items:center;gap:10px"><span style="color:var(--teal)"><i class="fas fa-fire-burner"></i></span> Grills</h3>
+          <div class="order-item-card">
+            <img class="order-item-img" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=200&q=80" alt="Adana Kebab" loading="lazy" />
+            <div class="order-item-info"><div class="order-item-name">Adana Kebab <span style="font-size:0.7rem;background:#FFF0F0;color:#E53E3E;padding:2px 8px;border-radius:100px;margin-left:6px">🌶 Spicy</span></div><div class="order-item-desc">Spiced minced lamb on charcoal skewers</div><div class="order-item-bottom"><span class="order-item-price">€22.00</span><button class="add-to-cart" onclick="addToCart('Adana Kebab', 22.00, this)">+ Add to Cart</button></div></div>
+          </div>
+          <div class="order-item-card">
+            <img class="order-item-img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=200&q=80" alt="Shish Kebab" loading="lazy" />
+            <div class="order-item-info"><div class="order-item-name">Lamb Shish Kebab</div><div class="order-item-desc">Marinated lamb cubes, grilled over charcoal</div><div class="order-item-bottom"><span class="order-item-price">€21.50</span><button class="add-to-cart" onclick="addToCart('Lamb Shish Kebab', 21.50, this)">+ Add to Cart</button></div></div>
+          </div>
+          <div class="order-item-card">
+            <img class="order-item-img" src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=200&q=80" alt="Chicken Shish" loading="lazy" />
+            <div class="order-item-info"><div class="order-item-name">Chicken Shish</div><div class="order-item-desc">Marinated chicken breast on skewers</div><div class="order-item-bottom"><span class="order-item-price">€19.00</span><button class="add-to-cart" onclick="addToCart('Chicken Shish', 19.00, this)">+ Add to Cart</button></div></div>
+          </div>
+          <div class="order-item-card">
+            <img class="order-item-img" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=200&q=80" alt="Mixed Grill" loading="lazy" />
+            <div class="order-item-info"><div class="order-item-name">Mixed Grill Platter (for 2)</div><div class="order-item-desc">Adana, shish, chicken, köfte, lamb chop</div><div class="order-item-bottom"><span class="order-item-price">€28.00</span><button class="add-to-cart" onclick="addToCart('Mixed Grill Platter', 28.00, this)">+ Add to Cart</button></div></div>
+          </div>
+        </div>
+
+        <!-- MAINS -->
+        <div style="margin-bottom:40px" class="reveal">
+          <h3 style="margin-bottom:20px;display:flex;align-items:center;gap:10px"><span style="color:var(--teal)"><i class="fas fa-bowl-food"></i></span> Mains</h3>
+          <div class="order-item-card">
+            <img class="order-item-img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=200&q=80" alt="Iskender" loading="lazy" />
+            <div class="order-item-info"><div class="order-item-name">İskender Kebab</div><div class="order-item-desc">Döner over pide with tomato butter sauce</div><div class="order-item-bottom"><span class="order-item-price">€21.00</span><button class="add-to-cart" onclick="addToCart('İskender Kebab', 21.00, this)">+ Add to Cart</button></div></div>
+          </div>
+          <div class="order-item-card">
+            <img class="order-item-img" src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=200&q=80" alt="Lamb Stew" loading="lazy" />
+            <div class="order-item-info"><div class="order-item-name">Kuzu Güveç (Lamb Stew)</div><div class="order-item-desc">Slow-braised lamb in clay pot</div><div class="order-item-bottom"><span class="order-item-price">€19.50</span><button class="add-to-cart" onclick="addToCart('Kuzu Güveç', 19.50, this)">+ Add to Cart</button></div></div>
+          </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <div style="margin-bottom:40px" class="reveal">
+          <h3 style="margin-bottom:20px;display:flex;align-items:center;gap:10px"><span style="color:var(--teal)"><i class="fas fa-ice-cream"></i></span> Desserts</h3>
+          <div class="order-item-card">
+            <img class="order-item-img" src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=200&q=80" alt="Baklava" loading="lazy" />
+            <div class="order-item-info"><div class="order-item-name">Pistachio Baklava (3 pcs)</div><div class="order-item-desc">Phyllo pastry with pistachios and honey syrup</div><div class="order-item-bottom"><span class="order-item-price">€7.50</span><button class="add-to-cart" onclick="addToCart('Pistachio Baklava', 7.50, this)">+ Add to Cart</button></div></div>
+          </div>
+          <div class="order-item-card">
+            <img class="order-item-img" src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=200&q=80" alt="Künefe" loading="lazy" />
+            <div class="order-item-info"><div class="order-item-name">Künefe</div><div class="order-item-desc">Shredded wheat with white cheese, served warm</div><div class="order-item-bottom"><span class="order-item-price">€9.00</span><button class="add-to-cart" onclick="addToCart('Künefe', 9.00, this)">+ Add to Cart</button></div></div>
+          </div>
+        </div>
+
+        <!-- DRINKS -->
+        <div class="reveal">
+          <h3 style="margin-bottom:20px;display:flex;align-items:center;gap:10px"><span style="color:var(--teal)"><i class="fas fa-mug-hot"></i></span> Drinks</h3>
+          <div class="order-item-card">
+            <img class="order-item-img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=200&q=80" alt="Turkish Coffee" loading="lazy" />
+            <div class="order-item-info"><div class="order-item-name">Turkish Coffee</div><div class="order-item-desc">Finely ground coffee brewed in copper cezve</div><div class="order-item-bottom"><span class="order-item-price">€3.50</span><button class="add-to-cart" onclick="addToCart('Turkish Coffee', 3.50, this)">+ Add to Cart</button></div></div>
+          </div>
+          <div class="order-item-card">
+            <img class="order-item-img" src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?auto=format&fit=crop&w=200&q=80" alt="Ayran" loading="lazy" />
+            <div class="order-item-info"><div class="order-item-name">Ayran</div><div class="order-item-desc">Chilled salted yogurt drink</div><div class="order-item-bottom"><span class="order-item-price">€3.00</span><button class="add-to-cart" onclick="addToCart('Ayran', 3.00, this)">+ Add to Cart</button></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CART SIDEBAR -->
+      <div class="cart-sidebar reveal delay-2">
+        <div class="cart-header">
+          <h4 style="font-family:'Playfair Display',serif"><i class="fas fa-shopping-bag" style="color:var(--teal);margin-right:6px"></i> Your Order</h4>
+          <span class="cart-badge" id="cartCount">0</span>
+        </div>
+        <div class="cart-items" id="cartItems">
+          <p class="cart-empty"><i class="fas fa-shopping-bag" style="display:block;font-size:2rem;margin-bottom:8px;color:var(--teal-light)"></i>Your cart is empty</p>
+        </div>
+        <div class="cart-total">
+          <div class="total-row"><span>Subtotal</span><span id="cartSubtotal">€0.00</span></div>
+          <div class="total-row"><span>Delivery</span><span style="color:var(--teal)">€2.99</span></div>
+          <div class="total-row" style="font-size:0.75rem;color:var(--text-light)"><span>Free delivery over €30</span><span></span></div>
+          <div class="total-row grand"><span>Total</span><span id="cartTotal">€0.00</span></div>
+        </div>
+        <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;gap:8px">
+            <select style="flex:1;padding:10px;background:var(--cream);border:none;border-radius:var(--radius-sm);font-family:inherit;font-size:0.85rem">
+              <option>Delivery</option>
+              <option>Collection</option>
+            </select>
+          </div>
+          <input type="text" placeholder="Delivery address..." style="padding:10px 14px;background:var(--cream);border:none;border-radius:var(--radius-sm);font-size:0.85rem;width:100%" />
+          <input type="tel" placeholder="Phone number..." style="padding:10px 14px;background:var(--cream);border:none;border-radius:var(--radius-sm);font-size:0.85rem;width:100%" />
+          <button id="checkoutBtn" class="btn btn-primary" style="width:100%;justify-content:center"><i class="fas fa-check"></i> Place Order</button>
+          <button onclick="clearCart()" style="background:none;border:none;color:var(--text-light);font-size:0.8rem;cursor:pointer;text-align:center">Clear cart</button>
+        </div>
+        <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);font-size:0.78rem;color:var(--text-light);text-align:center">
+          <i class="fas fa-lock" style="color:var(--teal)"></i> Secure checkout &nbsp;|&nbsp; <i class="fab fa-whatsapp" style="color:#25D366"></i> WhatsApp tracking
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h3 class="footer-logo">Restaurant <span>ELiZ</span></h3><p class="footer-about">Authentic Turkish cuisine crafted with passion since 2012.</p><div class="social-links"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-tiktok"></i></a></div></div>
+      <div><h4>Quick Links</h4><ul class="footer-links-list"><li><a href="menu.html">Our Menu</a></li><li><a href="reservations.html">Reservations</a></li><li><a href="order.html">Order Online</a></li><li><a href="events.html">Events</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div><h4>Opening Hours</h4><ul class="footer-hours"><li><span>Mon – Thu</span><span>12:00 – 22:00</span></li><li><span>Fri – Sat</span><span class="open">12:00 – 23:30</span></li><li><span>Sunday</span><span>13:00 – 22:00</span></li></ul></div>
+      <div><h4>Contact Us</h4><ul class="footer-contact-list"><li><i class="fas fa-map-marker-alt"></i><span>123 Ottoman Street, Berlin 10115</span></li><li><i class="fas fa-phone"></i><span>+49 30 1234 5678</span></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Restaurant ELiZ. All rights reserved.</p><p>Made with ❤️ in Berlin</p></div>
+  </div>
+</footer>
+<a href="https://wa.me/4930123456" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script src="js/main.js"></script>
+</body>
+</html>

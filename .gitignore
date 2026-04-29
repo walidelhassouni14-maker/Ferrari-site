@@ -1,0 +1,59 @@
+# Next.js
+.next/
+out/
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build
+build/
+dist/
+
+# Misc
+*.log
+.vercel
+
+# Windows home directory — exclude everything personal
+AppData/
+Application Data/
+Contacts/
+Cookies/
+curseforge/
+Desktop/
+Documents/
+Downloads/
+Favorites/
+Links/
+Local Settings/
+Music/
+My Documents/
+NetHood/
+OneDrive/
+Pictures/
+PrintHood/
+Recent/
+Saved Games/
+Searches/
+SendTo/
+Start Menu/
+Templates/
+Videos/
+
+# Windows system files
+NTUSER.DAT
+NTUSER.DAT*
+ntuser.dat*
+ntuser.ini
+*.TM.blf
+*.regtrans-ms
+
+# Shell history / misc dotfiles
+.node_repl_history
+.local/
+.claude.json
+.claude/
